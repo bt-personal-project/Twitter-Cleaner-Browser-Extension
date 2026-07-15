@@ -1,0 +1,5 @@
+export const MESSAGE_TYPES = {
+  REMOVE_RETWEETS: "REMOVE_RETWEETS",
+  REMOVE_LIKES: "REMOVE_LIKES",
+  STOP: "STOP",
+} as const;
