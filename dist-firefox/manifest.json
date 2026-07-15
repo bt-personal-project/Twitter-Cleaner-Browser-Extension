@@ -1,0 +1,50 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter 2077",
+  "version": "1.0.0",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*"
+  ],
+  "action": {
+    "default_popup": "src/popup/index.html"
+  },
+  "background": {
+    "scripts": [
+      "assets/index.ts-fh0i6mHa.js"
+    ]
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "twitter2077@example.com"
+    }
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/index.ts-loader-JoXd9VVn.js"
+      ],
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "https://twitter.com/*",
+        "https://x.com/*"
+      ],
+      "resources": [
+        "assets/message-types-DqzwKGdd.js",
+        "assets/index.ts-fh0i6mHa.js"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}
